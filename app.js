@@ -2,7 +2,7 @@ const express = require("express");
 const socket = require("socket.io");
 const path = require("path");
 const app = express();
-const port = 3003;
+const port = process.env.PORT || 3003;
 // -------------------------------------------------------
 app.use(express.static(path.join(__dirname, "public")));
 // -------------------------------------------------------
