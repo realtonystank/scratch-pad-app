@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+.options-cont {
+  height: 4rem;
+  width: 3.5rem;
+  background-color: #f1f2f6;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tools-cont {
+  display: flex;
+  justify-content: space-around;
+  height: 5rem;
+  background-color: #f1f2f6;
+  width: 55vw;
+  position: absolute;
+  top: 2rem;
+  left: 25vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.tools-cont > img {
+  display: block;
+  width: 4rem;
+  user-select: none;
+}
+.scale-tools {
+  animation-name: scale-tools;
+  animation-duration: 0.5s;
+}
+@keyframes scale-tools {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.pencil-tool-cont {
+  height: 5rem;
+  width: 8rem;
+  background-color: #f1f2f6;
+  position: absolute;
+  top: 7rem;
+  left: 25vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: none;
+}
+.pencil-width-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f2f6;
+  height: 2rem;
+  margin-bottom: 0.5rem;
+}
+.pencil-width-cont > input {
+  width: 80%;
+}
+.pencil-color-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  height: calc(100%-2rem);
+}
+.pencil-color {
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+}
+.black {
+  background-color: black;
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.eraser-tool-cont {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f2f6;
+  height: 2rem;
+  width: 8rem;
+  position: absolute;
+  top: 7rem;
+  left: 33.33vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.eraser-tool-cont > input {
+  width: 80%;
+}
+
+.sticky-cont {
+  height: 15rem;
+  width: 15rem;
+  position: absolute;
+  top: 15rem;
+  left: 15rem;
+}
+
+.header-cont {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: #f1f2f6;
+}
+.header-cont > * {
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.minimize {
+  background-color: #2ed573;
+}
+.remove {
+  background-color: #ff4757;
+}
+.note-cont {
+  height: calc(100% - 2rem);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.note-cont > textarea {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  resize: none;
+}
+
+.note-cont > img {
+  height: 100%;
+  width: 100%;
+}
